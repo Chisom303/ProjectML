@@ -1,0 +1,36 @@
+column,category,sensitivity,handling
+SrcMac,Identifier (HIPAA #13/#15),Restricted,Pseudonymize; exclude from model
+Sport,Identifier (HIPAA #13/#15),Restricted,Pseudonymize; exclude from model
+Flgs,Flow-state flag (attacker artifact),Internal,Exclude from model; audit only
+Temp,ePHI (vital sign),Confidential,Minimum necessary; encrypt at rest
+SpO2,ePHI (vital sign),Confidential,Minimum necessary; encrypt at rest
+Pulse_Rate,ePHI (vital sign),Confidential,Minimum necessary; encrypt at rest
+SYS,ePHI (vital sign),Confidential,Minimum necessary; encrypt at rest
+DIA,ePHI (vital sign),Confidential,Minimum necessary; encrypt at rest
+Heart_rate,ePHI (vital sign),Confidential,Minimum necessary; encrypt at rest
+Resp_Rate,ePHI (vital sign),Confidential,Minimum necessary; encrypt at rest
+ST,ePHI (vital sign),Confidential,Minimum necessary; encrypt at rest
+SrcBytes,Network telemetry,Internal,Model feature
+DstBytes,Network telemetry,Internal,Model feature
+SrcLoad,Network telemetry,Internal,Model feature
+DstLoad,Network telemetry,Internal,Model feature
+SIntPkt,Network telemetry,Internal,Model feature
+DIntPkt,Network telemetry,Internal,Model feature
+SIntPktAct,Network telemetry,Internal,Model feature
+SrcJitter,Network telemetry,Internal,Model feature
+DstJitter,Network telemetry,Internal,Model feature
+sMaxPktSz,Network telemetry,Internal,Model feature
+dMaxPktSz,Network telemetry,Internal,Model feature
+sMinPktSz,Network telemetry,Internal,Model feature
+Dur,Network telemetry,Internal,Model feature
+TotPkts,Network telemetry,Internal,Model feature
+TotBytes,Network telemetry,Internal,Model feature
+Load,Network telemetry,Internal,Model feature
+Loss,Network telemetry,Internal,Model feature
+pLoss,Network telemetry,Internal,Model feature
+pSrcLoss,Network telemetry,Internal,Model feature
+pDstLoss,Network telemetry,Internal,Model feature
+Rate,Network telemetry,Internal,Model feature
+Packet_num,Capture metadata,Internal,Temporal ordering only
+Label,Ground-truth label,Internal,Target
+Attack Category,Ground-truth label,Internal,Target
